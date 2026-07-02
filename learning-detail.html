@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Materi video dan artikel pembelajaran pengelolaan material Revora." />
+    <title>Materi Edukasi — Revora</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+  </head>
+  <body class="inner-page lesson-page">
+    <header class="inner-header is-sticky">
+      <nav class="container inner-nav" aria-label="Navigasi utama">
+        <a class="brand" href="index.html" aria-label="Beranda Revora"><span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span></a>
+        <div class="inner-nav__links"></div>
+        <div class="inner-nav__actions"></div>
+        <button class="inner-menu-toggle" type="button" aria-label="Buka navigasi" aria-expanded="false"><span></span><span></span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="lesson-hero">
+        <div class="container">
+          <div class="breadcrumb"><a href="learning.html">Edukasi</a><i>/</i><span class="js-lesson-number">Class 01</span></div>
+          <div class="lesson-hero__grid">
+            <div>
+              <span class="page-kicker js-lesson-kicker">Material Basics</span>
+              <h1 class="js-lesson-title">Plastik dan Kode Resin</h1>
+              <p class="js-lesson-summary">Pelajari cara mengenali plastik dan mempertahankan nilainya sebelum disetor.</p>
+            </div>
+            <div class="lesson-progress">
+              <span>Class Progress</span>
+              <strong><b>1</b>/3</strong>
+              <div><i></i></div>
+              <small>Video → Artikel → Kuis</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lesson-content">
+        <div class="container lesson-layout">
+          <aside class="lesson-sidebar">
+            <span>Isi Kelas</span>
+            <nav>
+              <a class="is-active" href="#video"><i>01</i><span>Video Materi<small>4 menit</small></span></a>
+              <a href="#article"><i>02</i><span>Artikel Ringkas<small>5 menit</small></span></a>
+              <a href="#assessment"><i>03</i><span>Kuis Akhir<small>5 soal</small></span></a>
+            </nav>
+            <a href="learning.html">← Semua kelas</a>
+          </aside>
+
+          <article class="lesson-main">
+            <section id="video">
+              <div class="lesson-section-label"><span>01</span><strong>Watch The Lesson</strong></div>
+              <div class="lesson-video js-lesson-video" role="button" tabindex="0" aria-label="Putar video materi">
+                <svg viewBox="0 0 800 440" aria-hidden="true"><path d="M248 92h304v256H248z"/><path d="M365 184l104 72-104 72z"/><circle cx="151" cy="110" r="42"/><circle cx="650" cy="342" r="66"/></svg>
+                <button type="button" aria-label="Putar video"><i>▶</i><span>Putar materi · 04:12</span></button>
+                <div class="lesson-video__playing"><span></span><strong>Simulasi video sedang diputar</strong><small>Materi visual akan ditempatkan pada area ini.</small></div>
+              </div>
+            </section>
+
+            <section id="article" class="lesson-article">
+              <div class="lesson-section-label"><span>02</span><strong>Read The Article</strong></div>
+              <p class="lesson-lead js-lesson-lead"></p>
+              <div class="js-lesson-article"></div>
+              <aside class="lesson-note">
+                <span>Remember This</span>
+                <strong class="js-lesson-note"></strong>
+              </aside>
+            </section>
+
+            <section id="assessment" class="lesson-assessment">
+              <div class="lesson-section-label"><span>03</span><strong>Check Your Understanding</strong></div>
+              <div>
+                <span>Final Quiz</span>
+                <h2>Selesaikan semua materi, lalu uji keputusan Anda.</h2>
+                <p>Kuis terdiri dari lima situasi nyata tentang plastik, kertas, e-waste, IoT, dan Big Data.</p>
+                <a class="button button--dark" href="quiz.html">Mulai Kuis</a>
+              </div>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand"><a class="brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span></a><p>Membantu setiap orang mengenali, memilah, dan menjaga nilai material.</p></div>
+          <div class="footer__nav"></div>
+        </div>
+        <div class="footer__bottom"><span>© 2026 Revora. Prototipe untuk ITCC 2026.</span><a class="back-to-top" href="#">Kembali ke atas ↑</a></div>
+      </div>
+    </footer>
+    <script src="js/pages.js"></script>
+    <script src="js/learning.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

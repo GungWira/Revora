@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#123c2f" />
+    <title>Buat Akun — Revora</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-layout">
+      <section class="auth-form-panel">
+        <a class="brand auth-brand" href="index.html" aria-label="Beranda Revora">
+          <span class="brand-mark"><span></span><span></span><span></span></span>
+          <span>Revora</span>
+        </a>
+        <a class="auth-back" href="index.html">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H5M9 6l-4 4 4 4" /></svg>
+          Kembali ke beranda
+        </a>
+
+        <div class="auth-form">
+          <p class="auth-form__eyebrow">Join The Loop</p>
+          <h1>Buat akun<br />Revora Anda.</h1>
+          <p class="auth-form__intro">
+            Simpan saldo material, riwayat transaksi, dan dampak Anda dalam satu akun.
+          </p>
+
+          <form class="js-auth-form" novalidate data-redirect="activity.html">
+            <div class="form-grid form-grid--two">
+              <div class="field">
+                <label for="first-name">Nama depan</label>
+                <div class="field__control">
+                  <input id="first-name" name="firstName" type="text" placeholder="Ayu" required />
+                </div>
+                <span class="field__error">Masukkan nama depan Anda.</span>
+              </div>
+              <div class="field">
+                <label for="last-name">Nama belakang</label>
+                <div class="field__control">
+                  <input id="last-name" name="lastName" type="text" placeholder="Rahma" required />
+                </div>
+                <span class="field__error">Masukkan nama belakang Anda.</span>
+              </div>
+              <div class="field" style="grid-column: 1 / -1">
+                <label for="register-email">Alamat email</label>
+                <div class="field__control">
+                  <input
+                    id="register-email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                  <span class="field__icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM4 7l8 6 8-6" /></svg>
+                  </span>
+                </div>
+                <span class="field__error">Masukkan alamat email yang valid.</span>
+              </div>
+
+              <div class="role-picker">
+                <span>Saya bergabung sebagai</span>
+                <div class="role-picker__grid">
+                  <label class="role-option">
+                    <input type="radio" name="role" value="individual" checked />
+                    <span class="role-option__icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3" /><path d="M6 20c0-4 2-6 6-6s6 2 6 6" /></svg>
+                    </span>
+                    <span><strong>Individu</strong><small>Beraksi dan pantau dampak</small></span>
+                  </label>
+                  <label class="role-option">
+                    <input type="radio" name="role" value="organization" />
+                    <span class="role-option__icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V7h10v13M14 11h6v9M8 11h2M8 15h2" /></svg>
+                    </span>
+                    <span><strong>Mitra Bisnis</strong><small>Terima material dan kelola pickup</small></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1">
+                <label for="register-password">Buat kata sandi</label>
+                <div class="field__control">
+                  <input
+                    id="register-password"
+                    name="password"
+                    type="password"
+                    autocomplete="new-password"
+                    placeholder="Minimal 8 karakter"
+                    minlength="8"
+                    required
+                  />
+                  <button class="password-toggle" type="button" aria-label="Tampilkan kata sandi">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3.2-5 9-5 9 5 9 5-3.2 5-9 5-9-5-9-5z" /><circle cx="12" cy="12" r="2.5" /></svg>
+                  </button>
+                </div>
+                <span class="field__error">Gunakan minimal 8 karakter.</span>
+              </div>
+            </div>
+
+            <label class="check-control" style="margin-top: 18px; font-size: 0.62rem">
+              <input type="checkbox" name="terms" required />
+              Saya menyetujui Ketentuan dan Kebijakan Privasi.
+            </label>
+
+            <button class="button button--dark auth-submit" type="submit">
+              Buat akun saya
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" /></svg>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <aside class="auth-visual" aria-label="Marketplace sirkular Revora">
+        <img src="assets/images/material-library.jpg" alt="Sampel material sirkular di studio desain" />
+        <div class="auth-float">
+          <span>Material yang cocok hari ini</span>
+          <strong>18.4 t</strong>
+          <small>melalui mitra sirkular terverifikasi</small>
+          <div class="auth-float__bar"><i style="width: 86%"></i></div>
+        </div>
+        <div class="auth-visual__content">
+          <span>One Shared Direction</span>
+          <h2>Aksi Anda berikutnya bisa menjadi sumber daya bagi orang lain.</h2>
+          <p>
+            Bergabunglah dengan masyarakat dan organisasi yang menggunakan informasi
+            lebih baik untuk menjaga material berguna tetap bergerak.
+          </p>
+        </div>
+      </aside>
+    </main>
+
+    <div class="auth-toast" role="status"><i>✓</i><span>Akun berhasil dibuat.</span></div>
+    <script src="js/auth.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

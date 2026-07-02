@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lihat simulasi dampak Revora dari material yang berhasil dipertahankan dalam siklus."
+    />
+    <title>Dampak — Revora</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+  </head>
+  <body class="inner-page">
+    <header class="inner-header is-sticky">
+      <nav class="container inner-nav" aria-label="Navigasi utama">
+        <a class="brand" href="index.html" aria-label="Beranda Revora">
+          <span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span>
+        </a>
+        <div class="inner-nav__links">
+          <a href="index.html">Beranda</a>
+          <a href="material-scan.html">Pindai Material</a>
+          <div class="nav-dropdown">
+            <a href="solutions.html">Solusi</a>
+            <div class="nav-dropdown__menu">
+              <a href="solutions.html"><strong>Solusi</strong><span>Solusi berdasarkan kebutuhan pengguna</span></a>
+              <a href="marketplace.html"><strong>Marketplace</strong><span>Layanan dan produk sirkular</span></a>
+              <a href="partners.html"><strong>Mitra</strong><span>Ekosistem mitra material</span></a>
+              <a href="product-detail.html"><strong>Loop Pickup</strong><span>Layanan jemput material</span></a>
+            </div>
+          </div>
+          <a class="is-active" href="impact.html">Dampak</a>
+          <div class="nav-dropdown">
+            <a href="learning.html">Belajar</a>
+            <div class="nav-dropdown__menu">
+              <a href="learning.html"><strong>Pusat Belajar</strong><span>Pelajari konsep Revora</span></a>
+              <a href="about.html"><strong>Tentang Revora</strong><span>Cerita dan prinsip platform</span></a>
+            </div>
+          </div>
+          <a href="activity.html">Aktivitas</a>
+        </div>
+        <div class="inner-nav__actions">
+          <a href="login.html">Masuk</a>
+          <a class="button button--dark button--small" href="register.html">Bergabung</a>
+        </div>
+        <button class="inner-menu-toggle" type="button" aria-label="Buka navigasi" aria-expanded="false"><span></span><span></span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="catalog-hero page-hero page-hero--impact">
+        <div class="container">
+          <div class="breadcrumb"><a href="index.html">Beranda</a><i>/</i><span>Dampak</span></div>
+          <div class="catalog-hero__content">
+            <div class="catalog-hero__copy">
+              <span>Impact Intelligence</span>
+              <h1>Buat setiap material pulih bisa diukur.</h1>
+              <p>
+                Revora mengubah aksi pengelolaan material menjadi data yang mudah
+                dipahami: berapa material terselamatkan, emisi yang dapat dihindari,
+                dan kontribusi pengguna dalam ekonomi sirkular.
+              </p>
+            </div>
+            <div class="impact-live-card">
+              <span>Dampak jaringan</span>
+              <strong>18.4 t</strong>
+              <small>material bernilai dipertahankan dalam siklus bulan ini</small>
+              <div><i style="--w: 82%"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact-dashboard">
+        <div class="container">
+          <div class="impact-grid">
+            <article class="impact-stat"><span>Material pulih</span><strong>18.400 kg</strong><small>+24,8% dari bulan lalu</small></article>
+            <article class="impact-stat"><span>Estimasi CO₂ dihindari</span><strong>31,2 t</strong><small>berdasarkan simulasi faktor material</small></article>
+            <article class="impact-stat"><span>Aksi terverifikasi</span><strong>1.284</strong><small>scan, pickup, audit, dan pembelian</small></article>
+            <article class="impact-stat"><span>Rute mitra</span><strong>46</strong><small>rute pengangkutan aktif</small></article>
+          </div>
+
+          <div class="impact-simulator">
+            <div>
+              <p class="tool-kicker">Impact Simulator</p>
+              <h2>Hitung dampak material Anda.</h2>
+              <p>
+                Masukkan berat material yang ingin dikelola. Simulasi ini membantu pengguna
+                memahami nilai aksi kecil sebelum masuk ke marketplace atau pickup.
+              </p>
+              <form class="impact-form js-impact-form">
+                <label>
+                  Kategori material
+                  <select class="js-impact-material">
+                    <option value="plastic">Plastik PET</option>
+                    <option value="paper">Kertas dan kardus</option>
+                    <option value="metal">Aluminium</option>
+                    <option value="textile">Tekstil</option>
+                    <option value="ewaste">E-Waste kecil</option>
+                  </select>
+                </label>
+                <label>
+                  Berat material
+                  <input class="js-impact-weight" type="number" min="1" max="500" value="25" />
+                </label>
+                <button class="button button--dark" type="submit">Hitung dampak</button>
+              </form>
+            </div>
+            <aside class="impact-result" aria-live="polite">
+              <span>Hasil Proyeksi</span>
+              <strong class="js-impact-output">25 kg</strong>
+              <p class="js-impact-copy">berpotensi menghindari 42,5 kg CO₂e dan menghasilkan 250 Loop Points.</p>
+              <div class="impact-bars">
+                <i style="--h: 62%"></i><i style="--h: 88%"></i><i style="--h: 44%"></i><i style="--h: 74%"></i>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact-story">
+        <div class="container impact-story__grid">
+          <article><span>Aksi Manusia</span><h3>Manusia tetap menentukan aksi.</h3><p>Pengguna memilih, memilah, dan mengonfirmasi tindakan nyata di lapangan.</p></article>
+          <article><span>Dukungan Automasi</span><h3>Teknologi membuat proses lebih cerdas.</h3><p>AI, IoT, dan big data membantu rekomendasi, pelacakan, serta estimasi dampak.</p></article>
+          <article><span>Bukti Bersama</span><h3>Dampak menjadi bukti bersama.</h3><p>Riwayat dan laporan membantu komunitas melihat progres yang sebelumnya tidak terlihat.</p></article>
+        </div>
+      </section>
+
+      <section class="deep-section">
+        <div class="container">
+          <div class="deep-heading">
+            <span>Impact Breakdown</span>
+            <h2>Dampak tidak hanya dihitung dari berat material.</h2>
+            <p>
+              Laporan yang baik harus menjelaskan prosesnya: material apa yang dikelola,
+              seberapa bersih kondisinya, ke mana material bergerak, dan tindakan apa
+              yang dilakukan pengguna.
+            </p>
+          </div>
+          <div class="breakdown-grid">
+            <article><strong>42%</strong><span>Plastik PET dan HDPE</span><p>Mayoritas berasal dari event, kantin, dan aktivitas rumah tangga.</p></article>
+            <article><strong>28%</strong><span>Kardus dan kertas</span><p>Paling stabil jika dikumpulkan dari kantor, toko, dan logistik UMKM.</p></article>
+            <article><strong>17%</strong><span>Logam dan aluminium</span><p>Nilai tinggi, mudah dilacak, dan cocok untuk marketplace material.</p></article>
+            <article><strong>13%</strong><span>Tekstil dan e-waste</span><p>Membutuhkan pemilahan lebih hati-hati dan mitra pengolahan khusus.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="ledger-section">
+        <div class="container ledger-layout">
+          <div class="ledger-copy">
+            <span>Evidence Record</span>
+            <h2>Dari aksi kecil menjadi catatan yang bisa dipertanggungjawabkan.</h2>
+            <p>
+              Setiap scan, pickup, dan transaksi marketplace dapat menjadi bukti progres.
+              Ini membuat dampak tidak hanya terasa baik, tetapi juga bisa dijelaskan
+              kepada sekolah, komunitas, sponsor, atau tim internal bisnis.
+            </p>
+          </div>
+          <div class="ledger-card">
+            <article><span>RV-0624</span><strong>48,2 kg kemasan campuran</strong><i>Terverifikasi · Loop Pickup</i></article>
+            <article><span>RV-0625</span><strong>12 kg aluminium</strong><i>Marketplace · Mitra material</i></article>
+            <article><span>RV-0626</span><strong>31 kg kardus bersih</strong><i>Pengumpulan komunitas</i></article>
+            <article><span>RV-0627</span><strong>8 perangkat e-waste</strong><i>Penanganan khusus</i></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="next-cta">
+        <div class="container next-cta__inner">
+          <span>Turn Insight Into Action</span>
+          <h2>Dampak baru berarti jika pengguna tahu langkah berikutnya.</h2>
+          <div>
+            <a class="button button--dark" href="activity.html">Lihat Aktivitas</a>
+            <a class="button button--ghost-dark" href="marketplace.html">Cari layanan</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a class="brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span></a>
+            <p>Kecerdasan sirkular yang membantu manusia dan material bergerak menuju pemanfaatan berikutnya yang lebih baik.</p>
+            <div class="footer__socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">yt</a></div>
+          </div>
+          <div class="footer__nav">
+            <div><strong>Platform</strong><a href="material-scan.html">Pindai Material</a><a href="marketplace.html">Marketplace</a><a href="impact.html">Dampak</a><a href="activity.html">Aktivitas</a></div>
+            <div><strong>Jelajahi</strong><a href="solutions.html">Solusi</a><a href="partners.html">Mitra</a><a href="learning.html">Belajar</a><a href="about.html">Tentang Revora</a></div>
+            <div><strong>Akun</strong><a href="login.html">Masuk</a><a href="register.html">Bergabung</a><a href="product-detail.html">Loop Pickup</a><a href="index.html">Beranda</a></div>
+          </div>
+          <div class="footer__newsletter">
+            <strong>Ikuti perkembangan siklus.</strong>
+            <p>Ide bulanan, pembaruan produk, dan cerita dari komunitas sirkular.</p>
+            <form><label class="sr-only" for="newsletter-email-impact">Alamat email</label><input id="newsletter-email-impact" type="email" placeholder="Alamat email" /><button type="submit" aria-label="Berlangganan">→</button></form>
+          </div>
+        </div>
+        <div class="footer__bottom"><span>© 2026 Revora. Prototipe untuk ITCC 2026.</span><div><a href="#">Privasi</a><a href="#">Ketentuan</a><a href="#">Aksesibilitas</a></div><a class="back-to-top" href="#">Kembali ke atas ↑</a></div>
+      </div>
+    </footer>
+
+    <script src="js/pages.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

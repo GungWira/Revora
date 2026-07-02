@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#123c2f" />
+    <title>Masuk — Revora</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-layout">
+      <section class="auth-form-panel">
+        <a class="brand auth-brand" href="index.html" aria-label="Beranda Revora">
+          <span class="brand-mark"><span></span><span></span><span></span></span>
+          <span>Revora</span>
+        </a>
+        <a class="auth-back" href="index.html">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H5M9 6l-4 4 4 4" /></svg>
+          Kembali ke beranda
+        </a>
+
+        <div class="auth-form">
+          <p class="auth-form__eyebrow">Welcome Back</p>
+          <h1>Lanjutkan<br />perjalanan sirkular Anda.</h1>
+          <p class="auth-form__intro">
+            Baru menggunakan Revora? <a href="register.html">Buat akun gratis</a>
+          </p>
+
+          <div class="social-login">
+            <button type="button"><i>G</i> Lanjutkan dengan Google</button>
+            <button type="button"><i>A</i> Lanjutkan dengan Apple</button>
+          </div>
+
+          <div class="auth-divider">atau lanjutkan dengan email</div>
+
+          <form class="js-auth-form" novalidate data-redirect="activity.html">
+            <div class="form-grid">
+              <div class="field">
+                <label for="login-email">Alamat email</label>
+                <div class="field__control">
+                  <input
+                    id="login-email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                  <span class="field__icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 6h16v12H4zM4 7l8 6 8-6" />
+                    </svg>
+                  </span>
+                </div>
+                <span class="field__error">Masukkan alamat email yang valid.</span>
+              </div>
+
+              <div class="field">
+                <label for="login-password">Kata sandi</label>
+                <div class="field__control">
+                  <input
+                    id="login-password"
+                    name="password"
+                    type="password"
+                    autocomplete="current-password"
+                    placeholder="Masukkan kata sandi"
+                    minlength="6"
+                    required
+                  />
+                  <button class="password-toggle" type="button" aria-label="Tampilkan kata sandi">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M3 12s3.2-5 9-5 9 5 9 5-3.2 5-9 5-9-5-9-5z" />
+                      <circle cx="12" cy="12" r="2.5" />
+                    </svg>
+                  </button>
+                </div>
+                <span class="field__error">Kata sandi minimal terdiri dari 6 karakter.</span>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="check-control">
+                <input type="checkbox" name="remember" />
+                Ingat saya
+              </label>
+              <a href="#">Lupa kata sandi?</a>
+            </div>
+
+            <button class="button button--dark auth-submit" type="submit">
+              Masuk ke Revora
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" /></svg>
+            </button>
+          </form>
+
+          <p class="auth-terms">
+            Dengan melanjutkan, Anda menyetujui <a href="#">Ketentuan</a> dan
+            <a href="#">Kebijakan Privasi</a> Revora.
+          </p>
+        </div>
+      </section>
+
+      <aside class="auth-visual" aria-label="Cerita dampak Revora">
+        <img src="assets/images/circular-collection.jpg" alt="Mitra pengangkutan Revora menerima material terpilah" />
+        <div class="auth-float">
+          <span>Komunitas Anda bulan ini</span>
+          <strong>4,820 kg</strong>
+          <small>material dipertahankan dalam siklus</small>
+          <div class="auth-float__bar"><i></i></div>
+        </div>
+        <div class="auth-visual__content">
+          <span>Connected Action</span>
+          <h2>Aksi kecil menjadi sistem ketika kita melakukannya bersama.</h2>
+          <p>
+            Kembali ke dasbor untuk memantau pengangkutan, mengelola layanan, dan
+            melihat nilai yang dihasilkan oleh material Anda.
+          </p>
+          <div class="auth-proof">
+            <div class="auth-proof__avatars"><i>AR</i><i>DS</i><i>MK</i><i>+</i></div>
+            <p><strong>24 komunitas terhubung</strong>telah membangun siklus bersama.</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <div class="auth-toast" role="status"><i>✓</i><span>Berhasil masuk.</span></div>
+    <script src="js/auth.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

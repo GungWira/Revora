@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simulasikan pemindaian material bernilai dengan Revora untuk mendapat rekomendasi pengelolaan berbasis AI dan data."
+    />
+    <title>Pindai Sampah — Revora</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+  </head>
+  <body class="inner-page">
+    <header class="inner-header is-sticky">
+      <nav class="container inner-nav" aria-label="Navigasi utama">
+        <a class="brand" href="index.html" aria-label="Beranda Revora">
+          <span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span>
+        </a>
+        <div class="inner-nav__links">
+          <a href="index.html">Beranda</a>
+          <a class="is-active" href="material-scan.html">Pindai Material</a>
+          <div class="nav-dropdown">
+            <a href="solutions.html">Solusi</a>
+            <div class="nav-dropdown__menu">
+              <a href="solutions.html"><strong>Solusi</strong><span>Solusi berdasarkan kebutuhan pengguna</span></a>
+              <a href="marketplace.html"><strong>Marketplace</strong><span>Layanan dan produk sirkular</span></a>
+              <a href="partners.html"><strong>Mitra</strong><span>Ekosistem mitra material</span></a>
+              <a href="product-detail.html"><strong>Loop Pickup</strong><span>Layanan jemput material</span></a>
+            </div>
+          </div>
+          <a href="impact.html">Dampak</a>
+          <div class="nav-dropdown">
+            <a href="learning.html">Belajar</a>
+            <div class="nav-dropdown__menu">
+              <a href="learning.html"><strong>Pusat Belajar</strong><span>Pelajari konsep Revora</span></a>
+              <a href="about.html"><strong>Tentang Revora</strong><span>Cerita dan prinsip platform</span></a>
+            </div>
+          </div>
+          <a href="activity.html">Aktivitas</a>
+        </div>
+        <div class="inner-nav__actions">
+          <a href="login.html">Masuk</a>
+          <a class="button button--dark button--small" href="register.html">Bergabung</a>
+        </div>
+        <button class="inner-menu-toggle" type="button" aria-label="Buka navigasi" aria-expanded="false"><span></span><span></span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="catalog-hero page-hero page-hero--scan">
+        <div class="container">
+          <div class="breadcrumb"><a href="index.html">Beranda</a><i>/</i><span>Pindai Sampah</span></div>
+          <div class="catalog-hero__content">
+            <div class="catalog-hero__copy">
+              <span>Material Scan</span>
+              <h1>Kenali nilainya sebelum menjadi sampah.</h1>
+              <p>
+                Gunakan simulasi pemindaian untuk mengenali material, memperkirakan
+                nilai pemulihan, dan menentukan tindakan paling tepat sebelum material
+                berakhir di tempat sampah.
+              </p>
+            </div>
+            <div class="scan-orb" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <strong>AI</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tool-section is-waiting-scan js-scan-section">
+        <div class="container split-tool">
+          <div class="tool-panel">
+            <p class="tool-kicker">AI Scan Studio</p>
+            <h2>Unggah foto atau pilih contoh material.</h2>
+            <p>
+              Simulasi ini menampilkan bagaimana Revora membaca foto material,
+              menampilkan confidence score, lalu memberi rekomendasi pengelolaan yang
+              lebih tepat.
+            </p>
+
+            <div class="scan-steps js-scan-steps" aria-label="Tahap pemindaian material">
+              <span class="is-active" data-step="upload">01 Unggah</span>
+              <span data-step="scan">02 Pindai AI</span>
+              <span data-step="action">03 Aksi</span>
+            </div>
+
+            <form class="scan-form js-scan-form">
+              <div class="scan-uploader">
+                <label class="scan-dropzone js-scan-dropzone">
+                  <input class="js-scan-upload" type="file" accept="image/*" />
+                  <span class="scan-dropzone__icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M5 20h14" /></svg>
+                  </span>
+                  <strong>Tarik atau unggah foto material</strong>
+                  <small>JPG, PNG, atau HEIC · hasil analisis tetap berupa simulasi</small>
+                </label>
+
+                <div class="scan-preview js-scan-preview" data-material="plastic">
+                  <div class="scan-preview__image js-scan-preview-image">
+                    <div class="scan-sample scan-sample--plastic">
+                      <i></i><i></i><i></i>
+                    </div>
+                  </div>
+                  <span class="scan-preview__line"></span>
+                  <span class="scan-preview__grid"></span>
+                  <div class="scan-preview__hud">
+                    <span class="js-scan-hud-label">Botol PET</span>
+                    <strong class="js-scan-hud-score">92% cocok</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sample-picker" aria-label="Pilih sample material">
+                <span>Coba contoh cepat:</span>
+                <button class="is-active" type="button" data-sample="plastic">PET</button>
+                <button type="button" data-sample="paper">Kertas</button>
+                <button type="button" data-sample="metal">Aluminium</button>
+                <button type="button" data-sample="textile">Tekstil</button>
+                <button type="button" data-sample="ewaste">E-Waste</button>
+              </div>
+
+              <label>
+                Jenis material
+                <select name="material" class="js-scan-material">
+                  <option value="plastic">Botol plastik PET</option>
+                  <option value="paper">Kardus dan kertas bersih</option>
+                  <option value="metal">Kaleng aluminium</option>
+                  <option value="textile">Tekstil layak pakai</option>
+                  <option value="ewaste">Elektronik kecil</option>
+                </select>
+              </label>
+              <label>
+                Estimasi berat
+                <select name="weight" class="js-scan-weight">
+                  <option value="5">± 5 kg</option>
+                  <option value="15" selected>± 15 kg</option>
+                  <option value="35">± 35 kg</option>
+                  <option value="80">± 80 kg</option>
+                </select>
+              </label>
+              <label>
+                Kondisi material
+                <select name="condition" class="js-scan-condition">
+                  <option value="clean" selected>Bersih dan terpilah</option>
+                  <option value="mixed">Tercampur beberapa jenis</option>
+                  <option value="dirty">Kotor atau basah</option>
+                </select>
+              </label>
+              <button class="button button--dark" type="submit">
+                Jalankan scan
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" /></svg>
+              </button>
+            </form>
+          </div>
+
+          <aside class="scan-result js-scan-result" aria-live="polite">
+            <div class="scan-result__head">
+              <span>Hasil AI</span>
+              <strong class="js-scan-score">92%</strong>
+            </div>
+            <h3 class="js-scan-title">Botol plastik PET terdeteksi bernilai.</h3>
+            <p class="js-scan-description">
+              Material cocok untuk pickup terjadwal. Jaga tetap kering dan pisahkan dari
+              plastik berwarna untuk meningkatkan nilai pemulihan.
+            </p>
+            <div class="scan-metrics">
+              <article><span>Nilai estimasi</span><strong class="js-scan-value">IDR 45K</strong></article>
+              <article><span>Risiko kontaminasi</span><strong class="js-scan-risk">Rendah</strong></article>
+              <article><span>Rekomendasi</span><strong class="js-scan-action">Jadwalkan pickup</strong></article>
+            </div>
+            <div class="scan-route">
+              <span></span>
+              <div><strong>Aksi terbaik berikutnya</strong><p class="js-scan-next">Gunakan Loop Pickup atau cari mitra terdekat di marketplace.</p></div>
+            </div>
+            <div class="scan-result__actions">
+              <a class="button button--dark button--small js-scan-drop-link" href="drop-point.html">Cari drop point</a>
+              <a class="button button--ghost-dark button--small" href="product-detail.html">Pesan pickup</a>
+              <button class="button button--ghost-dark button--small js-save-scan" type="button">Simpan ke Aktivitas</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="insight-strip">
+        <div class="container insight-strip__grid">
+          <article><span>01</span><h3>Kenali</h3><p>Pengguna memberi input material, AI membantu membaca potensi nilainya.</p></article>
+          <article><span>02</span><h3>Rekomendasikan</h3><p>Sistem memberi saran pickup, jual, gunakan ulang, atau audit lanjutan.</p></article>
+          <article><span>03</span><h3>Hubungkan</h3><p>Material diarahkan ke layanan dan mitra yang sesuai.</p></article>
+          <article><span>04</span><h3>Catat</h3><p>Setiap aksi masuk ke riwayat dan menjadi data dampak.</p></article>
+        </div>
+      </section>
+
+      <section class="deep-section">
+        <div class="container">
+          <div class="deep-heading">
+            <span>Material Library</span>
+            <h2>Setiap material punya jalur terbaik yang berbeda.</h2>
+            <p>
+              Masalah utama bukan hanya jumlah sampah, tetapi keputusan yang terlambat.
+              Material sering kehilangan nilai karena tercampur, basah, atau tidak
+              sampai ke mitra yang tepat.
+            </p>
+          </div>
+          <div class="material-library">
+            <article><span>PET</span><h3>Botol plastik bening</h3><p>Bernilai tinggi jika bersih, kering, dan tidak tercampur plastik berwarna.</p><strong>Pickup / jual</strong></article>
+            <article><span>OCC</span><h3>Kardus dan kertas</h3><p>Efisien jika dikumpulkan dalam batch besar dan dijaga dari cairan.</p><strong>Batch collection</strong></article>
+            <article><span>ALU</span><h3>Kaleng aluminium</h3><p>Dapat bersirkulasi berkali-kali dengan nilai pemulihan yang relatif stabil.</p><strong>Marketplace</strong></article>
+            <article><span>TXT</span><h3>Tekstil</h3><p>Lebih baik diarahkan ke reuse sebelum diproses menjadi serat atau residu.</p><strong>Reuse sorting</strong></article>
+            <article><span>EW</span><h3>Elektronik kecil</h3><p>Perlu mitra khusus karena mengandung komponen bernilai sekaligus berisiko.</p><strong>Pickup khusus</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="decision-section">
+        <div class="container decision-grid">
+          <div class="decision-copy">
+            <span>Decision Layer</span>
+            <h2>Dari hasil scan menuju aksi yang masuk akal.</h2>
+            <p>
+              Revora tidak berhenti pada “ini jenis material apa”. Sistem harus membantu
+              pengguna menentukan pilihan berikutnya berdasarkan kondisi, volume, lokasi,
+              dan potensi nilai.
+            </p>
+          </div>
+          <div class="decision-board">
+            <article><i>Jika bersih</i><strong>Naikkan nilai</strong><p>Material diarahkan ke pickup, jual, atau paspor material.</p></article>
+            <article><i>Jika tercampur</i><strong>Pilah ulang</strong><p>Pengguna mendapat instruksi pemilahan agar batch tidak turun kualitas.</p></article>
+            <article><i>Jika volume kecil</i><strong>Gabungkan batch</strong><p>Sistem menyarankan collection point atau jadwal komunitas.</p></article>
+            <article><i>Jika berisiko</i><strong>Pickup khusus</strong><p>E-waste dan material sensitif diarahkan ke mitra terverifikasi.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="next-cta">
+        <div class="container next-cta__inner">
+          <span>Next Step</span>
+          <h2>Setor sendiri secara gratis atau minta material dijemput.</h2>
+          <div>
+            <a class="button button--dark" href="drop-point.html">Cari Drop Point</a>
+            <a class="button button--ghost-dark" href="product-detail.html">Lihat Pickup</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a class="brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span></a>
+            <p>Kecerdasan sirkular yang membantu manusia dan material bergerak menuju pemanfaatan berikutnya yang lebih baik.</p>
+            <div class="footer__socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">yt</a></div>
+          </div>
+          <div class="footer__nav">
+            <div><strong>Platform</strong><a href="material-scan.html">Pindai Material</a><a href="marketplace.html">Marketplace</a><a href="impact.html">Dampak</a><a href="activity.html">Aktivitas</a></div>
+            <div><strong>Jelajahi</strong><a href="solutions.html">Solusi</a><a href="partners.html">Mitra</a><a href="learning.html">Belajar</a><a href="about.html">Tentang Revora</a></div>
+            <div><strong>Akun</strong><a href="login.html">Masuk</a><a href="register.html">Bergabung</a><a href="product-detail.html">Loop Pickup</a><a href="index.html">Beranda</a></div>
+          </div>
+          <div class="footer__newsletter">
+            <strong>Ikuti perkembangan siklus.</strong>
+            <p>Ide bulanan, pembaruan produk, dan cerita dari komunitas sirkular.</p>
+            <form><label class="sr-only" for="newsletter-email-scan">Alamat email</label><input id="newsletter-email-scan" type="email" placeholder="Alamat email" /><button type="submit" aria-label="Berlangganan">→</button></form>
+          </div>
+        </div>
+        <div class="footer__bottom"><span>© 2026 Revora. Prototipe untuk ITCC 2026.</span><div><a href="#">Privasi</a><a href="#">Ketentuan</a><a href="#">Aksesibilitas</a></div><a class="back-to-top" href="#">Kembali ke atas ↑</a></div>
+      </div>
+    </footer>
+
+    <script src="js/pages.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

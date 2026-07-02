@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Loop Pickup menyediakan pengangkutan sampah bernilai sekali jalan atau berlangganan berdasarkan zona lokasi pengguna." />
+    <title>Pickup Sampah — Revora</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+  </head>
+  <body class="inner-page">
+    <header class="inner-header is-sticky">
+      <nav class="container inner-nav" aria-label="Navigasi utama">
+        <a class="brand" href="index.html">
+          <span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span>
+        </a>
+        <div class="inner-nav__links">
+          <a href="index.html">Beranda</a>
+          <a href="material-scan.html">Pindai Material</a>
+          <div class="nav-dropdown">
+            <a class="is-active" href="solutions.html">Solusi</a>
+            <div class="nav-dropdown__menu">
+              <a href="solutions.html"><strong>Solusi</strong><span>Solusi berdasarkan kebutuhan pengguna</span></a>
+              <a href="marketplace.html"><strong>Marketplace</strong><span>Layanan dan produk sirkular</span></a>
+              <a href="partners.html"><strong>Mitra</strong><span>Ekosistem mitra material</span></a>
+              <a class="is-active" href="product-detail.html"><strong>Loop Pickup</strong><span>Layanan jemput material</span></a>
+            </div>
+          </div>
+          <a href="impact.html">Dampak</a>
+          <div class="nav-dropdown">
+            <a href="learning.html">Belajar</a>
+            <div class="nav-dropdown__menu">
+              <a href="learning.html"><strong>Pusat Belajar</strong><span>Pelajari konsep Revora</span></a>
+              <a href="about.html"><strong>Tentang Revora</strong><span>Cerita dan prinsip platform</span></a>
+            </div>
+          </div>
+          <a href="activity.html">Aktivitas</a>
+        </div>
+        <div class="inner-nav__actions">
+          <a href="login.html">Masuk</a>
+          <a class="button button--dark button--small" href="register.html">Bergabung</a>
+        </div>
+        <button class="inner-menu-toggle" type="button" aria-label="Buka navigasi"><span></span><span></span></button>
+      </nav>
+    </header>
+
+    <main class="detail-main">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Beranda</a><i>/</i><span>Pickup Sampah</span>
+        </div>
+
+        <section class="product-hero">
+          <div class="product-gallery">
+            <div class="product-gallery__main">
+              <img src="assets/images/circular-collection.jpg" alt="Tim Revora mengangkut material terpilah menggunakan kendaraan listrik" />
+              <span class="product-gallery__badge">Layanan sirkular terverifikasi</span>
+              <div class="product-gallery__float">
+                <span>Rata-rata efisiensi rute</span>
+                <strong>+32%</strong>
+                <small>dibandingkan jadwal pengangkutan tetap</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-info">
+            <span class="product-info__type">Layanan pickup · Denpasar dan sekitarnya</span>
+            <h1>Material dijemput.<br />Nilainya tetap ikut.</h1>
+            <p class="product-info__lead">
+              Pilih pickup sekali jalan atau langganan bulanan. Biaya dihitung dari
+              zona lokasi, sementara nilai material tetap masuk ke saldo Anda.
+            </p>
+            <div class="product-info__rating"><strong>4,9 ★</strong><span>1.240 pickup simulasi selesai</span></div>
+
+            <label class="pickup-location">
+              Lokasi penjemputan
+              <select class="js-pickup-zone">
+                <option value="0" data-label="Zona A · 0–5 km">Zona A · 0–5 km</option>
+                <option value="12000" data-label="Zona B · 5–10 km">Zona B · 5–10 km (+IDR 12K)</option>
+                <option value="25000" data-label="Zona C · 10–18 km">Zona C · 10–18 km (+IDR 25K)</option>
+              </select>
+            </label>
+
+            <div class="plan-label">Pilih layanan <span>Harga transparan sebelum konfirmasi</span></div>
+            <div class="plan-options">
+              <label class="plan-option">
+                <input type="radio" name="pickup-plan" value="Sekali Jemput" data-price="28000" checked />
+                <span class="plan-option__copy"><strong>Sekali Jemput</strong><small>Hingga 20 kg · jadwal sesuai ketersediaan</small></span>
+                <span class="plan-option__price"><strong>IDR 28K</strong><small>mulai dari</small></span>
+              </label>
+              <label class="plan-option">
+                <input type="radio" name="pickup-plan" value="Langganan Rumah" data-price="79000" />
+                <span class="plan-option__copy"><strong>Langganan Rumah</strong><small>4 pickup per bulan · maksimal 15 kg/pickup</small></span>
+                <span class="plan-option__price"><strong>IDR 79K</strong><small>/ bulan</small></span>
+              </label>
+              <label class="plan-option">
+                <input type="radio" name="pickup-plan" value="Langganan Usaha" data-price="249000" />
+                <span class="plan-option__copy"><strong>Langganan Usaha</strong><small>Pickup mingguan · laporan material dan saldo</small></span>
+                <span class="plan-option__price"><strong>IDR 249K</strong><small>/ bulan</small></span>
+              </label>
+            </div>
+
+            <div class="product-purchase">
+              <button class="button button--dark js-buy-button" type="button">
+                Mulai layanan ini
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" /></svg>
+              </button>
+              <button class="product-save" type="button" aria-label="Simpan layanan">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.2-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.8-7 10-7 10z" /></svg>
+              </button>
+            </div>
+            <p class="purchase-note">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 10V7a6 6 0 0 1 12 0v3M5 10h14v10H5z" /></svg>
+              Simulasi checkout aman · tidak ada pembayaran sungguhan
+            </p>
+          </div>
+        </section>
+
+        <div class="product-story">
+          <section class="product-story__section">
+            <div><span>What You Get</span><h2>Biaya angkut jelas. Nilai material tetap milik Anda.</h2></div>
+            <div class="product-story__content">
+              <p>
+                Loop Pickup menggabungkan pengangkutan fisik dengan catatan serah-terima
+                digital. Tim Anda dapat melihat material yang diangkut, tujuannya, dan
+                nilai sirkular yang dihasilkan.
+              </p>
+              <div class="feature-list">
+                <article><i>01</i><h3>Penjemputan Terjadwal</h3><p>Pilih tanggal, lokasi, dan jenis material yang akan dijemput.</p></article>
+                <article><i>02</i><h3>Timbang di Lokasi</h3><p>Mitra mengonfirmasi berat dan kondisi sebelum material dibawa.</p></article>
+                <article><i>03</i><h3>Saldo Material</h3><p>Estimasi nilai masuk ke dashboard setelah transaksi terverifikasi.</p></article>
+                <article><i>04</i><h3>Riwayat Dampak</h3><p>Lihat material, uang, emisi, dan aksi yang tercatat dari waktu ke waktu.</p></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="product-story__section">
+            <div><span>Pickup Process</span><h2>Dari rumah Anda menuju pengolah yang tepat.</h2></div>
+            <div class="process-steps">
+              <article><span>01</span><div><h3>Pilih Paket dan Zona</h3><p>Biaya awal menyesuaikan jarak dan jenis layanan yang dipilih.</p></div></article>
+              <article><span>02</span><div><h3>Tentukan Jadwal</h3><p>Masukkan alamat, jenis material, dan tanggal penjemputan.</p></div></article>
+              <article><span>03</span><div><h3>Konfirmasi Timbangan</h3><p>Nilai material dihitung setelah kondisi dan berat dikonfirmasi.</p></div></article>
+              <article><span>04</span><div><h3>Pantau Dashboard</h3><p>Biaya pickup, saldo material, histori, dan dampak tersimpan bersama.</p></div></article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a class="brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span></a>
+            <p>Kecerdasan sirkular yang membantu manusia dan material bergerak menuju pemanfaatan berikutnya yang lebih baik.</p>
+            <div class="footer__socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">yt</a></div>
+          </div>
+          <div class="footer__nav">
+            <div><strong>Platform</strong><a href="material-scan.html">Pindai Material</a><a href="marketplace.html">Marketplace</a><a href="impact.html">Dampak</a><a href="activity.html">Aktivitas</a></div>
+            <div><strong>Jelajahi</strong><a href="solutions.html">Solusi</a><a href="partners.html">Mitra</a><a href="learning.html">Belajar</a><a href="about.html">Tentang Revora</a></div>
+            <div><strong>Akun</strong><a href="login.html">Masuk</a><a href="register.html">Bergabung</a><a href="product-detail.html">Loop Pickup</a><a href="index.html">Beranda</a></div>
+          </div>
+          <div class="footer__newsletter">
+            <strong>Ikuti perkembangan siklus.</strong>
+            <p>Ide bulanan, pembaruan produk, dan cerita dari komunitas sirkular.</p>
+            <form><label class="sr-only" for="newsletter-email-detail">Alamat email</label><input id="newsletter-email-detail" type="email" placeholder="Alamat email" /><button type="submit" aria-label="Berlangganan">→</button></form>
+          </div>
+        </div>
+        <div class="footer__bottom"><span>© 2026 Revora. Prototipe untuk ITCC 2026.</span><div><a href="#">Privasi</a><a href="#">Ketentuan</a><a href="#">Aksesibilitas</a></div><a class="back-to-top" href="#">Kembali ke atas ↑</a></div>
+      </div>
+    </footer>
+
+    <div class="checkout-modal" role="dialog" aria-modal="true" aria-label="Mulai layanan Loop Pickup" hidden>
+      <div class="checkout-card">
+        <div class="checkout-card__head"><h2>Mulai Loop Pickup Anda</h2><button class="js-checkout-close" type="button" aria-label="Tutup">×</button></div>
+        <div class="checkout-card__body">
+          <div class="checkout-summary">
+            <span class="checkout-summary__icon">↻</span>
+            <div><span>Layanan terpilih</span><strong class="js-checkout-plan">Starter Loop</strong></div>
+            <strong class="js-checkout-price">IDR 320K</strong>
+          </div>
+          <form class="checkout-form js-checkout-form">
+            <label>Nama organisasi<input type="text" name="organization" placeholder="Nama organisasi Anda" required /></label>
+            <label>Alamat pengangkutan<input type="text" name="address" placeholder="Jalan dan kota" required /></label>
+            <label>Tanggal mulai pilihan<input type="date" name="date" required /></label>
+            <label>Simulasi pembayaran<select name="payment"><option>Akun virtual</option><option>QRIS</option><option>Transfer bank</option></select></label>
+            <div class="checkout-total"><span>Total bulan pertama</span><strong class="js-checkout-total">IDR 320K</strong></div>
+            <button class="button button--dark" type="submit">Konfirmasi layanan <span>→</span></button>
+          </form>
+        </div>
+        <div class="checkout-success">
+          <i>✓</i><h2>Siklus Anda siap berjalan.</h2>
+          <p>Layanan baru telah ditambahkan ke riwayat pembelian dan aktivitas Anda.</p>
+          <a class="button button--dark" href="activity.html">Lihat aktivitas saya <span>→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/pages.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

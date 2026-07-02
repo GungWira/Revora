@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cari drop point Revora terdekat untuk menyetor sampah bernilai secara gratis dan melihat estimasi uang yang diterima." />
+    <title>Drop Point — Revora</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+  </head>
+  <body class="inner-page">
+    <header class="inner-header is-sticky">
+      <nav class="container inner-nav" aria-label="Navigasi utama">
+        <a class="brand" href="index.html" aria-label="Beranda Revora">
+          <span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span>
+        </a>
+        <div class="inner-nav__links"></div>
+        <div class="inner-nav__actions">
+          <a href="login.html">Masuk</a>
+          <a class="button button--dark button--small" href="register.html">Bergabung</a>
+        </div>
+        <button class="inner-menu-toggle" type="button" aria-label="Buka navigasi" aria-expanded="false"><span></span><span></span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="drop-hero">
+        <div class="container">
+          <div class="breadcrumb"><a href="index.html">Beranda</a><i>/</i><span>Drop Point</span></div>
+          <div class="drop-hero__grid">
+            <div>
+              <span class="page-kicker">Free Drop-off</span>
+              <h1>Temukan tempat terbaik untuk sampah Anda.</h1>
+              <p>
+                Cari titik setor terdekat, bandingkan harga material, jam operasional,
+                kapasitas lokasi, dan estimasi uang sebelum Anda berangkat.
+              </p>
+            </div>
+            <div class="drop-hero__summary">
+              <span>Lokasi terdekat</span>
+              <strong class="js-nearest-distance">0,8 km</strong>
+              <small>Revora Point Renon · buka hingga 18.00</small>
+              <div><i></i><span>Setor tidak dikenakan biaya layanan</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="drop-explorer">
+        <div class="container">
+          <div class="drop-searchbar">
+            <label>
+              <span>Cari area atau alamat</span>
+              <input class="js-drop-search" type="search" placeholder="Contoh: Renon, Denpasar" value="Renon, Denpasar" />
+            </label>
+            <label>
+              <span>Jenis material</span>
+              <select class="js-drop-material">
+                <option value="plastic">Botol plastik PET</option>
+                <option value="paper">Kertas dan kardus</option>
+                <option value="metal">Kaleng aluminium</option>
+                <option value="textile">Tekstil</option>
+                <option value="ewaste">E-waste kecil</option>
+              </select>
+            </label>
+            <label>
+              <span>Estimasi berat</span>
+              <input class="js-drop-weight" type="number" min="1" max="200" value="8" />
+            </label>
+            <button class="button button--dark js-use-location" type="button">Gunakan lokasi saya</button>
+          </div>
+
+          <div class="drop-layout">
+            <div class="drop-map" aria-label="Peta simulasi drop point">
+              <svg viewBox="0 0 900 620" role="img" aria-label="Peta jalan dan titik setor simulasi">
+                <rect width="900" height="620" rx="28" fill="#e8eadf" />
+                <path d="M-30 140C140 205 260 86 432 145s276 176 510 91" fill="none" stroke="#fff" stroke-width="34" />
+                <path d="M72 650C148 470 262 426 392 338s286-83 552-267" fill="none" stroke="#fff" stroke-width="28" />
+                <path d="M174-30c-18 158 78 246 146 356s70 208 58 330" fill="none" stroke="#f8f7f1" stroke-width="22" />
+                <path d="M636-20c-54 166-26 256 26 354s66 174 56 316" fill="none" stroke="#f8f7f1" stroke-width="24" />
+                <g fill="none" stroke="#c9d0bf" stroke-width="3" opacity=".8">
+                  <path d="M0 275h900M0 480h900M500 0v620" />
+                  <path d="M72 50l180 90M480 520l230 100M690 120l170 88" />
+                </g>
+              </svg>
+              <button class="map-marker is-active" style="--x:56%;--y:47%" data-point="renon" type="button"><i>1</i><span>Renon</span></button>
+              <button class="map-marker" style="--x:31%;--y:66%" data-point="sesetan" type="button"><i>2</i><span>Sesetan</span></button>
+              <button class="map-marker" style="--x:72%;--y:25%" data-point="sanur" type="button"><i>3</i><span>Sanur</span></button>
+              <button class="map-marker" style="--x:21%;--y:29%" data-point="teuku-umar" type="button"><i>4</i><span>Teuku Umar</span></button>
+              <div class="map-user"><i></i><span>Lokasi Anda</span></div>
+              <div class="map-legend"><span><i></i>Tersedia</span><span><i></i>Hampir penuh</span></div>
+            </div>
+
+            <aside class="drop-results">
+              <div class="drop-results__head">
+                <div><span>Hasil Terdekat</span><strong>4 lokasi ditemukan</strong></div>
+                <button type="button">Urutkan: terdekat</button>
+              </div>
+              <div class="drop-point-list js-drop-list">
+                <article class="drop-point-card is-active" data-point="renon" data-name="Revora Point Renon" data-distance="0,8 km" data-rate="3200" data-status="Tersedia" data-hours="08.00–18.00">
+                  <div><span class="drop-point-card__number">01</span><i class="capacity-dot"></i></div>
+                  <div><h2>Revora Point Renon</h2><p>Jl. Tukad Yeh Aya · 0,8 km</p><small>Menerima PET, kardus, aluminium, dan tekstil</small></div>
+                  <strong>IDR 3.200/kg</strong>
+                </article>
+                <article class="drop-point-card" data-point="sesetan" data-name="Bank Sampah Sesetan" data-distance="2,1 km" data-rate="3000" data-status="Tersedia" data-hours="09.00–17.00">
+                  <div><span class="drop-point-card__number">02</span><i class="capacity-dot"></i></div>
+                  <div><h2>Bank Sampah Sesetan</h2><p>Jl. Raya Sesetan · 2,1 km</p><small>Menerima plastik, kertas, logam, dan e-waste kecil</small></div>
+                  <strong>IDR 3.000/kg</strong>
+                </article>
+                <article class="drop-point-card" data-point="sanur" data-name="Sanur Circular Hub" data-distance="3,4 km" data-rate="3500" data-status="Hampir penuh" data-hours="07.00–19.00">
+                  <div><span class="drop-point-card__number">03</span><i class="capacity-dot capacity-dot--warn"></i></div>
+                  <div><h2>Sanur Circular Hub</h2><p>Jl. Danau Tamblingan · 3,4 km</p><small>Menerima PET bersih, aluminium, tekstil, dan kaca</small></div>
+                  <strong>IDR 3.500/kg</strong>
+                </article>
+                <article class="drop-point-card" data-point="teuku-umar" data-name="Loop Station Teuku Umar" data-distance="4,2 km" data-rate="2800" data-status="Tersedia" data-hours="10.00–20.00">
+                  <div><span class="drop-point-card__number">04</span><i class="capacity-dot"></i></div>
+                  <div><h2>Loop Station Teuku Umar</h2><p>Jl. Teuku Umar Barat · 4,2 km</p><small>Menerima kemasan rumah tangga dan kardus</small></div>
+                  <strong>IDR 2.800/kg</strong>
+                </article>
+              </div>
+            </aside>
+          </div>
+
+          <section class="drop-estimate js-drop-estimate">
+            <div>
+              <span>Rencana Setor</span>
+              <h2 class="js-drop-name">Revora Point Renon</h2>
+              <p><strong class="js-drop-distance">0,8 km</strong> · <span class="js-drop-hours">08.00–18.00</span> · <span class="js-drop-status">Tersedia</span></p>
+            </div>
+            <div class="drop-estimate__math">
+              <span>Estimasi material</span>
+              <strong><b class="js-drop-weight-output">8 kg</b> × <b class="js-drop-rate">IDR 3.200</b></strong>
+            </div>
+            <div class="drop-estimate__total">
+              <span>Estimasi diterima</span>
+              <strong class="js-drop-total">IDR 25.600</strong>
+              <small>Harga akhir mengikuti hasil timbang di lokasi</small>
+            </div>
+            <button class="button button--dark js-save-drop" type="button">Simpan rencana setor</button>
+          </section>
+        </div>
+      </section>
+
+      <section class="drop-proof">
+        <div class="container">
+          <div class="deep-heading">
+            <span>After Drop-off</span>
+            <h2>Apa yang terjadi setelah material diserahkan?</h2>
+          </div>
+          <div class="drop-proof__grid">
+            <article><i>01</i><div><h3>Ditimbang</h3><p>Berat dan kondisi material dikonfirmasi bersama petugas.</p></div></article>
+            <article><i>02</i><div><h3>Dicatat</h3><p>Transaksi, harga, dan material masuk ke dashboard Anda.</p></div></article>
+            <article><i>03</i><div><h3>Dibayar</h3><p>Nilai material masuk sebagai saldo simulasi Revora.</p></div></article>
+            <article><i>04</i><div><h3>Disalurkan</h3><p>Material dikirim ke pengolah atau pembuat produk yang tepat.</p></div></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a class="brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span></a>
+            <p>Membantu sampah bernilai menemukan jalur setor, pickup, dan pemanfaatan berikutnya.</p>
+          </div>
+          <div class="footer__nav">
+            <div><strong>Mulai</strong><a href="material-scan.html">Pindai Sampah</a><a href="drop-point.html">Drop Point</a><a href="product-detail.html">Pickup</a></div>
+            <div><strong>Jelajahi</strong><a href="marketplace.html">Marketplace</a><a href="learning.html">Edukasi</a><a href="activity.html">Dashboard</a></div>
+            <div><strong>Revora</strong><a href="partners.html">Mitra Bisnis</a><a href="about.html">Tentang</a><a href="login.html">Masuk</a></div>
+          </div>
+        </div>
+        <div class="footer__bottom"><span>© 2026 Revora. Prototipe untuk ITCC 2026.</span><div><a href="#">Privasi</a><a href="#">Ketentuan</a><a href="#">Aksesibilitas</a></div><a class="back-to-top" href="#">Kembali ke atas ↑</a></div>
+      </div>
+    </footer>
+
+    <script src="js/pages.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

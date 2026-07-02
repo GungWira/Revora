@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riwayat Aktivitas — Revora</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+  </head>
+  <body class="dashboard-page">
+    <header class="inner-header is-sticky">
+      <nav class="container inner-nav" aria-label="Navigasi akun">
+        <a class="brand" href="index.html">
+          <span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span>
+        </a>
+        <div class="inner-nav__links">
+          <a href="index.html">Beranda</a>
+          <a href="material-scan.html">Pindai Material</a>
+          <div class="nav-dropdown">
+            <a href="solutions.html">Solusi</a>
+            <div class="nav-dropdown__menu">
+              <a href="solutions.html"><strong>Solusi</strong><span>Solusi berdasarkan kebutuhan pengguna</span></a>
+              <a href="marketplace.html"><strong>Marketplace</strong><span>Layanan dan produk sirkular</span></a>
+              <a href="partners.html"><strong>Mitra</strong><span>Ekosistem mitra material</span></a>
+              <a href="product-detail.html"><strong>Loop Pickup</strong><span>Layanan jemput material</span></a>
+            </div>
+          </div>
+          <a href="impact.html">Dampak</a>
+          <div class="nav-dropdown">
+            <a href="learning.html">Belajar</a>
+            <div class="nav-dropdown__menu">
+              <a href="learning.html"><strong>Pusat Belajar</strong><span>Pelajari konsep Revora</span></a>
+              <a href="about.html"><strong>Tentang Revora</strong><span>Cerita dan prinsip platform</span></a>
+            </div>
+          </div>
+          <a class="is-active" href="activity.html">Aktivitas</a>
+        </div>
+        <div class="inner-nav__actions">
+          <a href="marketplace.html">Jelajahi marketplace</a>
+          <a class="account-chip" href="activity.html"><i>AR</i><span>Ayu Rahma</span></a>
+        </div>
+        <button class="inner-menu-toggle" type="button" aria-label="Buka navigasi"><span></span><span></span></button>
+      </nav>
+    </header>
+
+    <main class="dashboard-layout">
+      <aside class="dashboard-sidebar">
+        <p class="dashboard-sidebar__label">Revora Saya</p>
+        <nav>
+          <a href="activity.html"><svg viewBox="0 0 24 24"><path d="M4 13h6V4H4zM14 20h6V11h-6zM4 20h6v-3H4zM14 7h6V4h-6z" /></svg>Ringkasan</a>
+          <a class="is-active" href="activity.html"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v5h5M12 8v5l3 2" /></svg>Riwayat aktivitas</a>
+          <a href="marketplace.html"><svg viewBox="0 0 24 24"><path d="M4 9h16l-1 11H5L4 9zM8 9V7a4 4 0 0 1 8 0v2" /></svg>Marketplace</a>
+          <a href="impact.html"><svg viewBox="0 0 24 24"><path d="M5 20V9M12 20V4M19 20v-7" /></svg>Laporan dampak</a>
+          <a href="login.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" /><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6 7 7M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4" /></svg>Pengaturan</a>
+        </nav>
+        <div class="sidebar-impact"><span>Level kontribusi</span><strong>Loop Hero</strong><small>6 aksi terverifikasi bulan ini</small></div>
+      </aside>
+
+      <section class="dashboard-main">
+        <div class="dashboard-heading">
+          <div><span>Dashboard Pengguna</span><h1>Nilai dari setiap aksi Anda.</h1></div>
+          <a class="button button--dark button--small" href="material-scan.html">Pindai sampah <span>→</span></a>
+        </div>
+
+        <section class="wallet-panel">
+          <div class="wallet-panel__main">
+            <span>Saldo Material</span>
+            <strong class="js-wallet-balance">IDR 48.500</strong>
+            <p>Nilai dari material yang sudah disetor atau dijemput dan terverifikasi.</p>
+            <div><button type="button">Tarik saldo</button><a href="drop-point.html">Tambah setoran →</a></div>
+          </div>
+          <div class="wallet-panel__impact">
+            <span>Dampak bulan ini</span>
+            <div class="impact-ring"><strong>68%</strong><span>menuju target</span></div>
+            <p><b>32,4 kg CO₂e</b> dihindari dari 18,6 kg material.</p>
+          </div>
+          <div class="wallet-panel__streak">
+            <span>Streak Pemilahan</span>
+            <strong>4 minggu</strong>
+            <div><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <small>Setor lagi minggu ini untuk mempertahankan streak.</small>
+          </div>
+        </section>
+
+        <div class="dashboard-stats">
+          <article class="dashboard-stat"><span>Total uang diterima</span><strong>IDR 186K</strong><small>Dari 14 transaksi material</small></article>
+          <article class="dashboard-stat"><span>Sampah terselamatkan</span><strong>128 kg</strong><small>Setara 642 botol PET</small></article>
+          <article class="dashboard-stat"><span>Emisi dihindari</span><strong>217 kg</strong><small>Estimasi CO₂e dari jenis material</small></article>
+          <article class="dashboard-stat"><span>Loop Points</span><strong>1.240</strong><small>18% teratas di komunitas Anda</small></article>
+        </div>
+
+        <section class="history-card">
+          <div class="history-card__head">
+            <h2>Riwayat Transaksi</h2>
+            <div class="history-tabs" role="tablist" aria-label="Jenis aktivitas">
+              <button class="is-active" type="button" data-history="all">Semua</button>
+              <button type="button" data-history="purchase">Pembelian</button>
+              <button type="button" data-history="collection">Pengangkutan</button>
+              <button type="button" data-history="scan">Pemindaian</button>
+              <button type="button" data-history="drop">Setor</button>
+            </div>
+          </div>
+          <div class="history-list js-history-list">
+            <article class="history-item" data-history-type="purchase">
+              <span class="history-item__icon">↻</span>
+              <div class="history-item__main"><strong>Loop Pickup</strong><span>Langganan Rumah · Layanan bulanan</span></div>
+              <div class="history-item__meta"><span>Tanggal</span><strong>18 Jun 2026</strong></div>
+              <div class="history-item__meta"><span>Jumlah</span><strong>IDR 79K</strong></div>
+              <span class="history-status">Aktif</span>
+              <a href="product-detail.html">Detail →</a>
+            </article>
+            <article class="history-item" data-history-type="collection">
+              <span class="history-item__icon">C</span>
+              <div class="history-item__main"><strong>Kemasan campuran diangkut</strong><span>Pengangkutan #RV-0624 · 48,2 kilogram</span></div>
+              <div class="history-item__meta"><span>Tanggal</span><strong>14 Jun 2026</strong></div>
+              <div class="history-item__meta"><span>Dampak</span><strong>+182 poin</strong></div>
+              <span class="history-status">Terverifikasi</span>
+              <a href="impact.html?material=plastic&weight=48">Dampak →</a>
+            </article>
+            <article class="history-item" data-history-type="scan">
+              <span class="history-item__icon">AI</span>
+              <div class="history-item__main"><strong>Kaca bening teridentifikasi</strong><span>Akurasi AI 96% · Disarankan untuk digunakan ulang</span></div>
+              <div class="history-item__meta"><span>Tanggal</span><strong>12 Jun 2026</strong></div>
+              <div class="history-item__meta"><span>Hasil</span><strong>Dapat digunakan ulang</strong></div>
+              <span class="history-status">Tercatat</span>
+              <a href="impact.html?material=metal&weight=8">Dampak →</a>
+            </article>
+            <article class="history-item" data-history-type="purchase">
+              <span class="history-item__icon">MP</span>
+              <div class="history-item__main"><strong>Paspor Material Starter</strong><span>100 kredit paspor digital</span></div>
+              <div class="history-item__meta"><span>Tanggal</span><strong>02 Jun 2026</strong></div>
+              <div class="history-item__meta"><span>Jumlah</span><strong>IDR 75K</strong></div>
+              <span class="history-status">Tersedia</span>
+              <a href="marketplace.html">Detail →</a>
+            </article>
+            <article class="history-item" data-history-type="collection">
+              <span class="history-item__icon">C</span>
+              <div class="history-item__main"><strong>Kertas dan karton diangkut</strong><span>Pengangkutan #RV-0598 · 72,8 kilogram</span></div>
+              <div class="history-item__meta"><span>Tanggal</span><strong>28 Mei 2026</strong></div>
+              <div class="history-item__meta"><span>Dampak</span><strong>+240 poin</strong></div>
+              <span class="history-status">Terverifikasi</span>
+              <a href="impact.html?material=paper&weight=72">Dampak →</a>
+            </article>
+          </div>
+          <div class="history-empty">Belum ada aktivitas dalam kategori ini.</div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a class="brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span></a>
+            <p>Kecerdasan sirkular yang membantu manusia dan material bergerak menuju pemanfaatan berikutnya yang lebih baik.</p>
+            <div class="footer__socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">yt</a></div>
+          </div>
+          <div class="footer__nav">
+            <div><strong>Platform</strong><a href="material-scan.html">Pindai Material</a><a href="marketplace.html">Marketplace</a><a href="impact.html">Dampak</a><a href="activity.html">Aktivitas</a></div>
+            <div><strong>Jelajahi</strong><a href="solutions.html">Solusi</a><a href="partners.html">Mitra</a><a href="learning.html">Belajar</a><a href="about.html">Tentang Revora</a></div>
+            <div><strong>Akun</strong><a href="login.html">Masuk</a><a href="register.html">Bergabung</a><a href="product-detail.html">Loop Pickup</a><a href="index.html">Beranda</a></div>
+          </div>
+          <div class="footer__newsletter">
+            <strong>Ikuti perkembangan siklus.</strong>
+            <p>Ide bulanan, pembaruan produk, dan cerita dari komunitas sirkular.</p>
+            <form><label class="sr-only" for="newsletter-email-activity">Alamat email</label><input id="newsletter-email-activity" type="email" placeholder="Alamat email" /><button type="submit" aria-label="Berlangganan">→</button></form>
+          </div>
+        </div>
+        <div class="footer__bottom"><span>© 2026 Revora. Prototipe untuk ITCC 2026.</span><div><a href="#">Privasi</a><a href="#">Ketentuan</a><a href="#">Aksesibilitas</a></div><a class="back-to-top" href="#">Kembali ke atas ↑</a></div>
+      </div>
+    </footer>
+
+    <script src="js/pages.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

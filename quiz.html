@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kuis edukasi Revora untuk menguji pemahaman siswa tentang sampah bernilai dan pemilahan." />
+    <title>Kuis Pemilahan — Revora</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+  </head>
+  <body class="inner-page quiz-page">
+    <header class="inner-header is-sticky">
+      <nav class="container inner-nav" aria-label="Navigasi utama">
+        <a class="brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span>Revora</span></a>
+        <div class="inner-nav__links"></div>
+        <div class="inner-nav__actions"><a href="login.html">Masuk</a><a class="button button--dark button--small" href="register.html">Bergabung</a></div>
+        <button class="inner-menu-toggle" type="button" aria-label="Buka navigasi" aria-expanded="false"><span></span><span></span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="quiz-hero">
+        <div class="container quiz-hero__grid">
+          <div>
+            <div class="breadcrumb"><a href="index.html">Beranda</a><i>/</i><a href="learning.html">Edukasi</a><i>/</i><span>Kuis</span></div>
+            <span class="page-kicker">Basic Sorting Quiz</span>
+            <h1>Apakah Anda sudah siap menentukan jalur sampah?</h1>
+            <p>Lima pertanyaan singkat. Setiap jawaban langsung memiliki pembahasan setelah kuis selesai.</p>
+          </div>
+          <div class="quiz-progress-card">
+            <span>Progres</span>
+            <strong><b class="js-quiz-current">1</b>/5</strong>
+            <div><i class="js-quiz-progress"></i></div>
+            <small>Selesaikan dengan skor minimal 80 untuk mendapatkan badge.</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-stage">
+        <div class="container">
+          <form class="quiz-card js-quiz-form">
+            <article class="quiz-question is-active" data-question="0" data-answer="b">
+              <span>Question 01</span>
+              <div class="quiz-question__visual"><svg viewBox="0 0 360 190" aria-hidden="true"><path d="M156 28h48v25l18 21v87H138V74l18-21z"/><path d="M145 96h70M145 118h70"/></svg></div>
+              <h2>Apa yang sebaiknya dilakukan sebelum menyetor botol PET?</h2>
+              <label><input type="radio" name="q0" value="a" /> Biarkan sisa minuman di dalamnya</label>
+              <label><input type="radio" name="q0" value="b" /> Kosongkan, bilas, dan jaga tetap kering</label>
+              <label><input type="radio" name="q0" value="c" /> Campurkan dengan sampah makanan</label>
+            </article>
+            <article class="quiz-question" data-question="1" data-answer="c">
+              <span>Question 02</span>
+              <div class="quiz-question__visual"><svg viewBox="0 0 360 190" aria-hidden="true"><rect x="94" y="42" width="172" height="108" rx="8"/><path d="M116 72h128M116 96h96M116 120h112"/></svg></div>
+              <h2>Mengapa kardus basah memiliki nilai lebih rendah?</h2>
+              <label><input type="radio" name="q1" value="a" /> Warnanya menjadi lebih gelap</label>
+              <label><input type="radio" name="q1" value="b" /> Ukurannya menjadi lebih kecil</label>
+              <label><input type="radio" name="q1" value="c" /> Serat rusak dan dapat mencemari material lain</label>
+            </article>
+            <article class="quiz-question" data-question="2" data-answer="a">
+              <span>Question 03</span>
+              <div class="quiz-question__visual"><svg viewBox="0 0 360 190" aria-hidden="true"><rect x="128" y="34" width="104" height="124" rx="12"/><circle cx="180" cy="132" r="8"/><path d="M150 58h60v46h-60"/></svg></div>
+              <h2>Ke mana e-waste kecil sebaiknya disalurkan?</h2>
+              <label><input type="radio" name="q2" value="a" /> Mitra khusus yang menangani elektronik</label>
+              <label><input type="radio" name="q2" value="b" /> Tempat sampah organik</label>
+              <label><input type="radio" name="q2" value="c" /> Dicampur dengan kertas</label>
+            </article>
+            <article class="quiz-question" data-question="3" data-answer="b">
+              <span>Question 04</span>
+              <div class="quiz-question__visual"><svg viewBox="0 0 360 190" aria-hidden="true"><circle cx="180" cy="95" r="50"/><path d="M180 55v80M140 95h80"/></svg></div>
+              <h2>Apa fungsi IoT pada drop point Revora?</h2>
+              <label><input type="radio" name="q3" value="a" /> Menggantikan seluruh petugas manusia</label>
+              <label><input type="radio" name="q3" value="b" /> Membaca berat dan kapasitas titik pengumpulan</label>
+              <label><input type="radio" name="q3" value="c" /> Membuat produk secara otomatis</label>
+            </article>
+            <article class="quiz-question" data-question="4" data-answer="c">
+              <span>Question 05</span>
+              <div class="quiz-question__visual"><svg viewBox="0 0 360 190" aria-hidden="true"><path d="M82 135l74-74 48 48 32-32 42 42"/><path d="M82 145h196"/></svg></div>
+              <h2>Big Data membantu Revora melakukan apa?</h2>
+              <label><input type="radio" name="q4" value="a" /> Membuat semua harga material sama</label>
+              <label><input type="radio" name="q4" value="b" /> Menghilangkan kebutuhan mitra pengolah</label>
+              <label><input type="radio" name="q4" value="c" /> Membaca pola harga, volume, lokasi, dan kebutuhan pickup</label>
+            </article>
+
+            <div class="quiz-actions">
+              <button class="button button--ghost-dark js-quiz-prev" type="button" disabled>Sebelumnya</button>
+              <button class="button button--dark js-quiz-next" type="button">Berikutnya</button>
+            </div>
+          </form>
+
+          <section class="quiz-result js-quiz-result" hidden>
+            <span>Quiz Result</span>
+            <strong class="js-quiz-score">0</strong>
+            <h2 class="js-quiz-title">Pemilah Pemula</h2>
+            <p class="js-quiz-message">Pelajari kembali materi lalu coba sekali lagi.</p>
+            <div class="quiz-badge"><i>✓</i><div><span>Badge</span><strong class="js-quiz-badge">Pemilah Pemula</strong></div></div>
+            <div><button class="button button--dark js-quiz-retry" type="button">Ulangi kuis</button><a class="button button--ghost-dark" href="material-scan.html">Praktik pindai</a></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/pages.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

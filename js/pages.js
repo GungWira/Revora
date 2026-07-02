@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { href: "drop-point.html", label: "Drop Point" },
     { href: "product-detail.html", label: "Pickup" },
     { href: "matching.html", label: "AI Matching" },
-    { href: "material-market.html", label: "Material Market" },
+    { href: "material-market.html", label: "Pasar Material" },
     { href: "learning.html", label: "Edukasi" },
   ];
   if (isAuthenticated) {

@@ -14,7 +14,7 @@
     <nav class="eco-container eco-nav" aria-label="Navigasi utama">
       <a class="eco-brand" href="index.html"><span class="eco-brand__mark"></span><span>Revora</span></a>
       <div class="eco-links">
-        <a href="#ecosystem">Ekosistem</a><a href="matching.html">AI Matching</a><a href="material-market.html">Material Market</a><a href="impact.html">Dampak</a><a href="learning.html">Edukasi</a>
+        <a href="#ecosystem">Ekosistem</a><a href="matching.html">AI Matching</a><a href="material-market.html">Pasar Material</a><a href="impact.html">Dampak</a><a href="learning.html">Edukasi</a>
       </div>
       <div class="eco-nav__actions"><a class="eco-button eco-button--ghost" href="login.html">Masuk</a><a class="eco-button" href="register.html">Mulai bergabung</a></div>
       <button class="eco-menu" type="button" aria-label="Buka navigasi">☰</button>
@@ -45,20 +45,30 @@
 
     <section class="eco-section eco-section--cream" id="ecosystem">
       <div class="eco-container">
-        <div class="eco-head"><div><span class="eco-label">Three Connected Layers</span><h2 class="eco-heading">Satu material bergerak melalui tiga lapis ekosistem.</h2></div><p class="eco-copy">Setiap lapisan memiliki peran jelas. Individu memasok data, agregator membentuk volume, dan industri mengubah material menjadi bagian rantai pasok baru.</p></div>
+        <div class="eco-head"><div><span class="eco-label">Tiga Lapis Terhubung</span><h2 class="eco-heading">Satu material bergerak melalui tiga lapis ekosistem.</h2></div><p class="eco-copy">Setiap lapisan memiliki peran jelas. Individu memasok data, agregator membentuk volume, dan industri mengubah material menjadi bagian rantai pasok baru.</p></div>
         <div class="layer-grid">
-          <article class="layer-card"><span>01 · INDIVIDU</span><svg viewBox="0 0 400 210"><path d="M128 173V84l72-49 72 49v89M157 173v-62h86v62"/><circle cx="200" cy="85" r="18"/></svg><h3>Kenali dan salurkan.</h3><p>Pindai material rumah tangga, setor gratis atau gunakan pickup, lalu pantau nilai dan dampaknya.</p><small class="layer-card__tip">Pindai → Setor → Dampak</small></article>
-          <article class="layer-card"><span>02 · AGREGATOR</span><svg viewBox="0 0 400 210"><rect x="86" y="65" width="228" height="108" rx="10"/><path d="M112 104h176M112 136h122M155 65V37h90v28"/></svg><h3>Kumpulkan dan verifikasi.</h3><p>Satukan pasokan kecil, kendalikan kualitas, lalu posting batch yang siap disalurkan.</p><small class="layer-card__tip">Kapasitas → Batch → Listing</small></article>
-          <article class="layer-card"><span>03 · INDUSTRI</span><svg viewBox="0 0 400 210"><path d="M77 173V89l77 37V79l84 43V55l85 47v71z"/><path d="M111 146h24M183 146h24M263 146h24"/></svg><h3>Temukan sumber daya.</h3><p>Posting kebutuhan bahan baku, bandingkan match, dan dapatkan bukti dampak terverifikasi.</p><small class="layer-card__tip">Demand → Match → Certificate</small></article>
+          <article class="layer-card"><span>01 · INDIVIDU</span><svg viewBox="0 0 400 210"><path d="M128 173V84l72-49 72 49v89M157 173v-62h86v62"/><circle cx="200" cy="85" r="18"/></svg><h3>Memilah dan menyetor.</h3><p>Pindai material rumah tangga, setor gratis atau gunakan pickup, lalu pantau nilai dan dampaknya.</p><small class="layer-card__tip">340 rumah tangga memasok 2,4 ton PET kepada Bank Sampah Melati setiap bulan.</small></article>
+          <article class="layer-card"><span>02 · AGREGATOR</span><svg viewBox="0 0 400 210"><rect x="86" y="65" width="228" height="108" rx="10"/><path d="M112 104h176M112 136h122M155 65V37h90v28"/></svg><h3>Mengumpulkan dan menyalurkan.</h3><p>Satukan pasokan kecil, kendalikan kualitas, lalu posting batch yang siap disalurkan.</p><small class="layer-card__tip">Bank Sampah Melati menggabungkan setoran menjadi batch PET Grade A seberat 12 ton.</small></article>
+          <article class="layer-card"><span>03 · INDUSTRI</span><svg viewBox="0 0 400 210"><path d="M77 173V89l77 37V79l84 43V55l85 47v71z"/><path d="M111 146h24M183 146h24M263 146h24"/></svg><h3>Menyerap bahan baku.</h3><p>Posting kebutuhan bahan baku, bandingkan kecocokan, dan dapatkan bukti dampak terverifikasi.</p><small class="layer-card__tip">Bali PET Recycling menyerap 12 ton PET dan mencatat estimasi 9,1 ton CO₂e.</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="eco-section">
+      <div class="eco-container">
+        <div class="eco-head"><div><span class="eco-label">Coba Kecerdasannya</span><h2 class="eco-heading">Coba satu kecocokan tanpa perlu login.</h2></div><p class="eco-copy">Masukkan material dan lokasi. Revora menampilkan tiga permintaan paling relevan sebelum Anda mendaftar.</p></div>
+        <div class="demo-shell">
+          <div class="demo-form"><span class="eco-label">Input Cepat</span><h3>Material apa yang Anda miliki?</h3><label class="eco-field"><span>Jenis material</span><select class="js-demo-material"><option>PET Bening</option><option>Kardus OCC</option><option>Aluminium UBC</option><option>Limbah Tekstil</option></select></label><label class="eco-field"><span>Lokasi</span><select class="js-demo-city"><option>Denpasar</option><option>Badung</option><option>Surabaya</option><option>Bandung</option></select></label><button class="eco-button js-demo-match" type="button" style="margin-top:20px">Cari kecocokan</button></div>
+          <div class="demo-result"><span class="eco-label" style="color:var(--eco-lime)">Hasil Simbiosis AI</span><h3>Hasil akan muncul di sini.</h3><p class="eco-copy" style="color:rgba(255,255,255,.62)">Ranking mempertimbangkan jenis, jarak, volume, kredibilitas, dan potensi karbon.</p><div class="demo-match"></div></div>
         </div>
       </div>
     </section>
 
     <section class="eco-section eco-section--dark" data-counter-section>
       <div class="eco-container">
-        <div class="eco-head"><div><span class="eco-label" style="color:var(--eco-lime)">Live Network</span><h2 class="eco-heading">Dampak yang bergerak bersama jaringan.</h2></div><p class="eco-copy" style="color:rgba(255,255,255,.62)">Data demonstrasi diperbarui dari transaksi supply–demand, pickup, dan verifikasi mitra di seluruh ekosistem.</p></div>
+        <div class="eco-head"><div><span class="eco-label" style="color:var(--eco-lime)">Jaringan Langsung</span><h2 class="eco-heading">Dampak yang bergerak bersama jaringan.</h2></div><p class="eco-copy" style="color:rgba(255,255,255,.62)">Data demonstrasi menggunakan sumber yang sama dengan dashboard dampak publik.</p></div>
         <div class="metric-strip">
-          <article><span>MATCH HARI INI</span><strong data-count="128">0</strong><small>17 sedang menunggu konfirmasi</small></article>
+          <article><span>KECOCOKAN HARI INI</span><strong data-count="128">0</strong><small>17 sedang menunggu konfirmasi</small></article>
           <article><span>MATERIAL TERSALURKAN</span><strong data-count="184.6" data-decimals="1" data-suffix=" t">0</strong><small>30 hari terakhir</small></article>
           <article><span>EMISI DIHINDARI</span><strong data-count="72.8" data-decimals="1" data-suffix=" t">0</strong><small>estimasi CO₂e terverifikasi</small></article>
           <article><span>MITRA AKTIF</span><strong data-count="426">0</strong><small>di 18 kota Indonesia</small></article>
@@ -66,29 +76,26 @@
       </div>
     </section>
 
-    <section class="eco-section">
-      <div class="eco-container">
-        <div class="eco-head"><div><span class="eco-label">Try The Intelligence</span><h2 class="eco-heading">Coba satu match tanpa perlu login.</h2></div><p class="eco-copy">Masukkan material dan lokasi. Demo ini memperlihatkan bagaimana Revora menemukan permintaan yang relevan sebagai hook sebelum onboarding.</p></div>
-        <div class="demo-shell">
-          <div class="demo-form"><span class="eco-label">Quick Input</span><h3>Material apa yang Anda miliki?</h3><label class="eco-field"><span>Jenis material</span><select class="js-demo-material"><option>PET Bening</option><option>Kardus OCC</option><option>Aluminium UBC</option><option>Limbah Tekstil</option></select></label><label class="eco-field"><span>Lokasi</span><select class="js-demo-city"><option>Denpasar</option><option>Badung</option><option>Surabaya</option><option>Bandung</option></select></label><button class="eco-button js-demo-match" type="button" style="margin-top:20px">Temukan match terbaik</button></div>
-          <div class="demo-result"><span class="eco-label" style="color:var(--eco-lime)">AI Symbiosis Result</span><h3>Hasil akan muncul di sini.</h3><p class="eco-copy" style="color:rgba(255,255,255,.62)">Ranking mempertimbangkan jenis, jarak, volume, kredibilitas, dan potensi karbon.</p><div class="demo-match"><div class="demo-match__top"><div><small>BEST DIRECT MATCH</small><h3 class="js-demo-name">PET Bening · Denpasar</h3></div><div class="score-ring" style="--score:93"><strong>93%</strong></div></div><ul><li>✓ 8,4 km dari lokasi Anda</li><li>✓ Kebutuhan 12 ton/bulan</li><li>✓ Mitra Gold terverifikasi</li><li>✓ Potensi 4,8 ton CO₂e dihindari</li></ul><a class="eco-button eco-button--lime" href="matching.html" style="margin-top:20px">Buka Matching Engine</a></div></div>
-        </div>
-      </div>
-    </section>
-
     <section class="eco-section eco-section--cream">
       <div class="eco-container case-grid">
-        <div class="case-visual"><span class="eco-label">Case Study</span><svg viewBox="0 0 500 330"><path d="M60 255h380M92 255V141l88 42V95l104 77V70l124 73v112"/><path d="M122 220h32M220 220h32M332 220h32"/><path d="M74 67c72 0 74 50 142 50s72-56 142-56 78 48 100 48"/></svg><strong>Tekstil → Material insulasi</strong></div>
-        <div class="case-copy"><span class="eco-label">From Waste To Supply</span><blockquote>“40 ton limbah tekstil per bulan kini menjadi pasokan produksi, bukan biaya pembuangan.”</blockquote><p class="eco-copy">Simulasi kasus PT Aruna Tekstil dan Koperasi Serat Kembali menunjukkan agregasi supply dari 23 UMKM dengan match industri berjarak 18 km.</p><div class="case-stats"><div><strong>94%</strong><small>Match Score</small></div><div><strong>16,2 t</strong><small>CO₂e dihindari</small></div><div><strong>23</strong><small>UMKM terhubung</small></div></div></div>
+        <div class="case-visual"><span class="eco-label">Studi Kasus</span><svg viewBox="0 0 500 330"><path d="M60 255h380M92 255V141l88 42V95l104 77V70l124 73v112"/><path d="M122 220h32M220 220h32M332 220h32"/><path d="M74 67c72 0 74 50 142 50s72-56 142-56 78 48 100 48"/></svg><strong>Tekstil → Material insulasi</strong></div>
+        <div class="case-copy"><span class="eco-label">Dari Limbah Menjadi Pasokan</span><blockquote>“40 ton limbah tekstil per bulan kini menjadi pasokan produksi, bukan biaya pembuangan.”</blockquote><p class="eco-copy">Simulasi PT Aruna Tekstil dan Koperasi Serat Kembali menunjukkan agregasi pasokan dari 23 UMKM dengan mitra industri berjarak 18 km.</p><div class="case-stats"><div><strong>94%</strong><small>Skor kecocokan</small></div><div><strong>16,2 t</strong><small>CO₂e dihindari</small></div><div><strong>23</strong><small>UMKM terhubung</small></div></div><a class="eco-button" href="match-detail.html" style="margin-top:24px">Lihat detail transaksi</a></div>
+      </div>
+    </section>
+
+    <section class="eco-section eco-section--dark">
+      <div class="eco-container case-grid">
+        <div class="case-copy"><span class="eco-label" style="color:var(--eco-lime)">Untuk Organisasi</span><h2 class="eco-heading">Bahan baku pulih, bukti dampak, dan pasar karbon dalam satu alur.</h2><p class="eco-copy" style="color:rgba(255,255,255,.65)">Temukan bahan baku daur ulang terverifikasi, bangun hubungan dengan agregator, unduh laporan ESG, dan ikuti simulasi carbon market tanpa berpindah sistem.</p><div class="eco-hero__actions"><a class="eco-button eco-button--lime" href="onboarding.html?role=business">Mulai sebagai organisasi</a><a class="eco-button eco-button--light" href="matching.html">Coba AI Matching</a></div></div>
+        <div class="case-visual" style="background:white;color:var(--eco-ink)"><span class="eco-label">Nilai Bisnis</span><div class="task-list" style="margin-top:35px"><article><span>Pasokan bahan baku terverifikasi</span><strong>12 listing</strong></article><article><span>Laporan dampak siap ditinjau</span><strong>Q2 2026</strong></article><article><span>Carbon credit dimiliki</span><strong>42,8 ton</strong></article><article><span>Kecocokan baru hari ini</span><strong>4 peluang</strong></article></div></div>
       </div>
     </section>
 
     <section class="eco-section">
-      <div class="eco-container"><div class="eco-head"><div><span class="eco-label">Ecosystem Proof</span><h2 class="eco-heading">Dibangun untuk kolaborasi lintas skala.</h2></div><p class="eco-copy">Placeholder mitra dapat diganti dengan organisasi nyata saat validasi dan kerja sama tersedia.</p></div><div class="logo-row"><span>BANK SAMPAH BALI</span><span>NUSA CIRCULAR</span><span>ARUNA TEXTILE</span><span>SURYA POLIMER</span><span>GREEN INDUSTRY</span></div></div>
+      <div class="eco-container"><div class="eco-head"><div><span class="eco-label">Bukti Ekosistem</span><h2 class="eco-heading">Dibangun untuk kolaborasi lintas skala.</h2></div><p class="eco-copy">Placeholder mitra dapat diganti dengan organisasi nyata saat validasi dan kerja sama tersedia.</p></div><div class="logo-row"><span>BANK SAMPAH BALI</span><span>NUSA CIRCULAR</span><span>ARUNA TEXTILE</span><span>SURYA POLIMER</span><span>GREEN INDUSTRY</span></div></div>
     </section>
   </main>
 
-  <footer class="eco-footer"><div class="eco-container"><div class="eco-footer__grid"><div><a class="eco-brand" href="index.html"><span class="eco-brand__mark"></span><span>Revora</span></a><p>Dari rumah tangga ke rantai pasok industri—satu jaringan kecerdasan sirkular.</p></div><div><div><strong>EKOSISTEM</strong><a href="material-scan.html">Individu</a><a href="listing-new.html">Agregator</a><a href="matching.html">Industri</a></div><div><strong>PLATFORM</strong><a href="matching.html">AI Matching</a><a href="material-market.html">Material Market</a><a href="marketplace.html">Produk Upcycle</a><a href="impact.html">Dampak Publik</a></div><div><strong>REVORA</strong><a href="partner-directory.html">Mitra</a><a href="learning.html">Edukasi</a><a href="about.html">Tentang</a></div></div></div><div class="eco-footer__bottom">© 2026 Revora · Prototipe Circular Intelligence Ecosystem untuk ITCC 2026.</div></div></footer>
+  <footer class="eco-footer"><div class="eco-container"><div class="eco-footer__grid"><div><a class="eco-brand" href="index.html"><span class="eco-brand__mark"></span><span>Revora</span></a><p>Dari rumah tangga ke rantai pasok industri—satu jaringan kecerdasan sirkular.</p></div><div><div><strong>EKOSISTEM</strong><a href="material-scan.html">Individu</a><a href="listing-new.html">Agregator</a><a href="matching.html">Industri</a></div><div><strong>PLATFORM</strong><a href="matching.html">AI Matching</a><a href="material-market.html">Pasar Material</a><a href="marketplace.html">Produk Upcycle</a><a href="impact.html">Dampak Publik</a></div><div><strong>REVORA</strong><a href="partner-directory.html">Mitra</a><a href="learning.html">Edukasi</a><a href="about.html">Tentang</a></div></div></div><div class="eco-footer__bottom">© 2026 Revora · Prototipe Circular Intelligence Ecosystem untuk ITCC 2026.</div></div></footer>
   <script src="js/ecosystem.js"></script><script src="js/chatbot.js"></script>
 </body>
 </html>

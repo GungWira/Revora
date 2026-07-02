@@ -54,14 +54,16 @@ document.addEventListener("DOMContentLoaded", () => {
         submit.classList.remove("is-loading");
         const selectedRole = form.querySelector('input[name="role"]:checked')?.value;
         localStorage.setItem("revoraAuth", "true");
-        localStorage.setItem("revoraRole", selectedRole || "individual");
+        localStorage.setItem(
+          "revoraRole",
+          selectedRole || localStorage.getItem("revoraRole") || "individual",
+        );
         toast.classList.add("is-visible");
         window.setTimeout(() => {
           const redirect = new URLSearchParams(window.location.search).get("redirect");
-          window.location.href =
-            selectedRole === "organization"
-              ? "partners.html"
-              : redirect || form.dataset.redirect;
+          window.location.href = selectedRole
+            ? `onboarding.html?role=${encodeURIComponent(selectedRole)}`
+            : redirect || form.dataset.redirect;
         }, 700);
       }, 650);
     });

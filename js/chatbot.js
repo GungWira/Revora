@@ -5,6 +5,31 @@
   const pageContext = () => {
     const page = window.location.pathname.split("/").pop() || "index.html";
     const contexts = {
+      "index.html": {
+        greeting:
+          "Halo! Saya Rivo. Saya bisa menjelaskan tiga lapis ekosistem Revora dan cara AI Symbiosis Matching bekerja.",
+        quick: ["Apa itu AI Matching?", "Tiga lapis ekosistem", "Coba buat listing"],
+      },
+      "matching.html": {
+        greeting:
+          "Halo! Geser prioritas jarak, harga, dan karbon untuk melihat ranking match berubah secara langsung.",
+        quick: ["Cara hitung Match Score", "Direct vs Indirect Match", "Buat listing"],
+      },
+      "dashboard.html": {
+        greeting:
+          "Halo! Dashboard ini dapat dipratinjau sebagai Individu, Agregator, atau Industri.",
+        quick: ["Dashboard agregator", "Kebutuhan industri", "Lihat dampak"],
+      },
+      "material-market.html": {
+        greeting:
+          "Halo! Material Market adalah bursa B2B untuk batch material mentah dan setengah jadi yang terverifikasi.",
+        quick: ["Bedanya dengan AI Matching", "Ajukan penawaran", "Material terverifikasi"],
+      },
+      "transaction.html": {
+        greeting:
+          "Halo! Jalankan status simulasi hingga selesai untuk menerbitkan Impact Certificate.",
+        quick: ["Apa itu Impact Certificate?", "Cara verifikasi dampak", "Lihat transaksi"],
+      },
       "material-scan.html": {
         greeting:
           "Halo! Saya Rivo. Di sini saya bisa membantu membaca hasil scan material dan menentukan langkah terbaik berikutnya.",
@@ -78,8 +103,23 @@
     },
     {
       keywords: ["apa itu revora", "tentang revora", "revora itu"],
-      text: "Revora membantu pengguna mengenali nilai sampah, memilih setor gratis atau pickup berbayar, menerima nilai material, lalu memantau saldo dan dampaknya.",
-      action: { label: "Coba Pindai Sampah", href: "material-scan.html" },
+      text: "Revora adalah ekosistem kecerdasan sirkular yang menghubungkan individu, agregator, dan industri agar limbah satu pihak menjadi sumber daya bagi pihak lain.",
+      action: { label: "Buka AI Matching", href: "matching.html" },
+    },
+    {
+      keywords: ["ai matching", "match score", "symbiosis", "kecocokan"],
+      text: "AI Symbiosis Matching memberi ranking berdasarkan kecocokan material, jarak, volume, rating mitra, harga, dan potensi karbon. Bobot jarak, harga, serta dampak dapat digeser secara real-time.",
+      action: { label: "Coba Matching Engine", href: "matching.html" },
+    },
+    {
+      keywords: ["direct match", "indirect match", "perantara"],
+      text: "Direct Match berarti material dapat langsung digunakan pihak demand. Indirect Match membutuhkan agregator atau proses antara sebelum memenuhi spesifikasi industri.",
+      action: { label: "Lihat Hasil Match", href: "matching.html" },
+    },
+    {
+      keywords: ["listing", "supply", "demand", "posting material"],
+      text: "Listing Supply menyatakan material yang tersedia, sedangkan Demand menyatakan kebutuhan produksi. Form empat langkah menangkap kategori, volume, lokasi, kualitas, dan prioritas match.",
+      action: { label: "Buat Listing", href: "listing-new.html" },
     },
     {
       keywords: ["drop point", "setor", "lokasi", "titik terdekat", "bank sampah"],
@@ -103,8 +143,8 @@
     },
     {
       keywords: ["marketplace", "produk", "beli", "material pulih"],
-      text: "Marketplace Revora berisi produk hasil olahan seperti perlengkapan rumah, aksesori, dan alat sekolah dari plastik, kertas, kaca, banner, atau tekstil pulih.",
-      action: { label: "Buka Marketplace", href: "marketplace.html" },
+      text: "Revora memiliki Material Market B2B untuk batch bahan baku pulih, sementara marketplace B2C tetap dapat menampilkan produk upcycle dari mitra.",
+      action: { label: "Buka Material Market", href: "material-market.html" },
     },
     {
       keywords: ["dampak", "emisi", "karbon", "hitung"],
@@ -123,8 +163,8 @@
     },
     {
       keywords: ["akun organisasi", "bisnis", "perusahaan"],
-      text: "Akun Mitra Bisnis digunakan untuk menetapkan harga material, mengelola kapasitas drop point, menerima setoran, dan mengambil permintaan pickup.",
-      action: { label: "Lihat Mitra Bisnis", href: "partners.html" },
+      text: "Akun Agregator mengelola material masuk dan listing supply. Akun Industri memposting demand, mencari bahan baku, memantau karbon, dan membuat laporan ESG.",
+      action: { label: "Pilih Peran", href: "onboarding.html" },
     },
     {
       keywords: ["lupa kata sandi", "password", "tidak bisa masuk"],
@@ -134,7 +174,7 @@
     {
       keywords: ["riwayat", "pembelian", "transaksi"],
       text: "Dashboard menyatukan saldo material, transaksi setor, pickup, pembelian marketplace, hasil pemindaian, emisi yang dihindari, badge, dan streak.",
-      action: { label: "Lihat Dashboard", href: "activity.html" },
+      action: { label: "Lihat Dashboard", href: "dashboard.html" },
     },
     {
       keywords: ["rekomendasi layanan", "layanan apa", "pilih layanan"],
@@ -143,13 +183,13 @@
     },
     {
       keywords: ["cara kerja marketplace"],
-      text: "Marketplace menjual produk hasil olahan. Setiap kartu menampilkan material asal, dampak produk, harga, checkout, dan pengiriman simulasi.",
-      action: { label: "Jelajahi marketplace", href: "marketplace.html" },
+      text: "Material Market menampilkan grade, volume, harga per kilogram, sertifikasi, dan lokasi. Organisasi dapat membuka detail lalu mengajukan penawaran.",
+      action: { label: "Jelajahi Material Market", href: "material-market.html" },
     },
     {
       keywords: ["solusi untuk bisnis", "bisnis", "kantor", "operasional"],
       text: "Mitra bisnis dapat menerima material, menetapkan harga per kilogram, mengelola kapasitas lokasi, mengambil permintaan pickup, dan menjual produk hasil olahan.",
-      action: { label: "Buka Mitra Bisnis", href: "partners.html" },
+      action: { label: "Buka Dashboard Ekosistem", href: "dashboard.html" },
     },
     {
       keywords: ["sekolah", "kampus", "edukasi"],
@@ -159,12 +199,12 @@
     {
       keywords: ["loop points", "poin"],
       text: "Dashboard mencatat saldo material, total uang diterima, berat sampah terselamatkan, estimasi CO₂e, streak pemilahan, badge, dan Loop Points.",
-      action: { label: "Buka Dashboard", href: "activity.html" },
+      action: { label: "Buka Dashboard", href: "dashboard.html" },
     },
     {
       keywords: ["mitra", "partner", "recycler", "collector", "collection point"],
       text: "Mitra Revora berperan menjaga material tetap bergerak: collection point mengumpulkan, pickup partner mengangkut, recycler memulihkan, dan maker menggunakan ulang material.",
-      action: { label: "Lihat Mitra", href: "partners.html" },
+      action: { label: "Lihat Mitra", href: "partner-directory.html" },
     },
     {
       keywords: ["belajar", "learning", "edukasi", "ekonomi sirkular"],

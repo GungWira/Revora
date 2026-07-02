@@ -435,7 +435,7 @@
 .role-picker__grid {
   display: grid;
   gap: 8px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 }
 
 .role-option {

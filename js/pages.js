@@ -11,11 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
     { href: "material-scan.html", label: "Pindai Sampah" },
     { href: "drop-point.html", label: "Drop Point" },
     { href: "product-detail.html", label: "Pickup" },
-    { href: "marketplace.html", label: "Marketplace" },
+    { href: "matching.html", label: "AI Matching" },
+    { href: "material-market.html", label: "Material Market" },
     { href: "learning.html", label: "Edukasi" },
   ];
   if (isAuthenticated) {
-    navigationItems.push({ href: "activity.html", label: "Dashboard" });
+    navigationItems.push({ href: "dashboard.html", label: "Dashboard" });
   }
   const innerNavigation = document.querySelector(".inner-nav__links");
   if (innerNavigation) {
@@ -34,15 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const innerActions = document.querySelector(".inner-nav__actions");
   if (innerActions) {
     innerActions.innerHTML = isAuthenticated
-      ? `<a class="account-chip" href="activity.html"><span>Dashboard</span><i>AR</i></a>`
+      ? `<a class="account-chip" href="dashboard.html"><span>Dashboard</span><i>AR</i></a>`
       : `<a class="button button--dark button--small" href="register.html">Bergabung</a>`;
   }
   const footerNavigation = document.querySelector(".footer__nav");
   if (footerNavigation) {
     footerNavigation.innerHTML = `
       <div><strong>Mulai</strong><a href="material-scan.html">Pindai Sampah</a><a href="drop-point.html">Drop Point</a><a href="product-detail.html">Pickup</a>${isAuthenticated ? '<a href="activity.html">Dashboard</a>' : ""}</div>
-      <div><strong>Jelajahi</strong><a href="marketplace.html">Marketplace</a><a href="learning.html">Edukasi</a><a href="quiz.html">Kuis</a><a href="impact.html">Dampak</a></div>
-      <div><strong>Revora</strong><a href="partners.html">Mitra Bisnis</a><a href="about.html">Tentang</a><a href="register.html">Bergabung</a></div>
+      <div><strong>Ekosistem</strong><a href="matching.html">AI Matching</a><a href="material-market.html">Material Market</a><a href="partner-directory.html">Mitra</a><a href="impact.html">Dampak</a></div>
+      <div><strong>Revora</strong><a href="carbon-market.html">Carbon Market</a><a href="learning.html">Edukasi</a><a href="about.html">Tentang</a><a href="register.html">Bergabung</a></div>
     `;
   }
 
